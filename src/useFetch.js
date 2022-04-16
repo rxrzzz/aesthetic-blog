@@ -31,3 +31,5 @@ const useFetch = (url) => {
     }, [url]);
     return {data, pending, error};
 }
+
+export default useFetch;
