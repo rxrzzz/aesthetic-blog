@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <header>
@@ -5,8 +7,8 @@ const Navbar = () => {
                 aesthetic-blog
             </div>
             <div className="navlinks">
-                <a href="#">View Blogs</a>
-                <a href="#">About Us</a>
+                <Link to="/">View Blogs</Link>
+                <Link to="/create">About Us</Link>
             </div>
         </header>
       );

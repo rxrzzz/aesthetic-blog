@@ -5,10 +5,10 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const abortConst = newAbortController();
+        const abortConst = new AbortController();
         fetch(url, {signal: abortConst.signal})
         .then((res) => {
-            if(!res.json){
+            if(!res.ok){
                 throw Error("could not fetch data from that particular resource")
             }
             return res.json()

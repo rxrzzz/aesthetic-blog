@@ -1,8 +1,10 @@
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import useFetch from "./useFetch";
 
+
 const BlogDetails = () => {
+    const history = useNavigate();
   const id = useParams();
   const {
     data: blog,
