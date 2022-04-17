@@ -16,5 +16,10 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-size: x-large;
 }
 
+.navlinks a{
+  margin-inline-start: 1.3rem;
+  font-size: large;
+}
