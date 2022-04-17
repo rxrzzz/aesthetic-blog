@@ -12,10 +12,9 @@ code {
     monospace;
 }
 
-.main-home{
-  display: grid;
-  place-content: center;
-  text-align: center;
-  background-color: #B59886;
-  height: 100vh;
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+

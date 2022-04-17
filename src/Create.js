@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Create = () => {
@@ -37,8 +37,8 @@ const Create = () => {
                 <label>Body</label>
                 <textarea type="text" required value={body} onChange={((e) => setBody(e.target.value))} />
 
-                {!isPending && (<button>Add Blog</button>)}
-                {isPending && (<button>Adding Blog...</button>)}
+                {!isPending && (<button type="submit">Add Blog</button>)}
+                {isPending && (<button type="submit">Adding Blog...</button>)}
             </form>
         </div>
      );
