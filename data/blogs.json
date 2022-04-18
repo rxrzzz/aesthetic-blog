@@ -1,5 +1,28 @@
 {
-    "blogs": [
-        
-    ]
+  "blogs": [
+    {
+      "id": 1,
+      "title": "My first blog",
+      "body": "Why do we use it?\n It is a long established fact",
+      "author": "Temi"
+    },
+    {
+      "id": 2,
+      "title": "My second blog",
+      "body": "Why do we use it?\n It is a long established fact",
+      "author": "Timi"
+    },
+    {
+      "id": 3,
+      "title": "My second blog",
+      "body": "Why do we use it?\n It is a long established fact",
+      "author": "Timi"
+    },
+    {
+      "id": 4,
+      "title": "My second blog",
+      "body": "Why do we use it?\n It is a long established fact",
+      "author": "Timi"
+    }
+  ]
 }

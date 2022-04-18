@@ -7,7 +7,7 @@ const Navbar = () => {
                 aesthetic-blog
             </div>
             <div className="navlinks">
-                <Link to="/blogs">List Blogs</Link>
+                {/* <Link to="/blogs">List Blogs</Link> */}
                 <Link to="/create">Create Blog</Link>
             </div>
         </header>
