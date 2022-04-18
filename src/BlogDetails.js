@@ -1,16 +1,15 @@
-import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import useFetch from "./useFetch";
 
 
 const BlogDetails = () => {
     const history = useNavigate();
-  const id = useParams();
+    const {id} = useParams();
   const {
     data: blog,
     pending,
     error,
-  } = useFetch("http://localhost:8000/blogs" + id);
+  } = useFetch("http://localhost:8000/blogs/" + id );
 
   const handleClick = () => {
     fetch("http://localhost:8000/blogs" + blog.id, {
